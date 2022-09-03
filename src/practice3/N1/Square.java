@@ -1,4 +1,4 @@
-package practice3;
+package practice3.N1;
 
 public class Square extends Rectangle{
     public Square(String color, boolean filled, double side) {

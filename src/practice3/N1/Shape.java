@@ -1,4 +1,4 @@
-package practice3;
+package practice3.N1;
 
 public abstract class Shape {
     protected String color;
