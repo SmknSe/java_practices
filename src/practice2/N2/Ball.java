@@ -1,4 +1,4 @@
-package practice2;
+package practice2.N2;
 
 public class Ball {
     private double x = 0.0;

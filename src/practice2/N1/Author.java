@@ -1,4 +1,4 @@
-package practice2;
+package practice2.N1;
 
 public class Author {
     private String name;

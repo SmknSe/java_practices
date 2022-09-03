@@ -1,4 +1,4 @@
-package practice2;
+package practice2.N2;
 
 public class TestBall {
     public static void main(String[] args) {
