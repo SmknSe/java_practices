@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class fifth {
     public static void main(String[] args) {
-        new fifth();
-    }
-    fifth(){
         System.out.println(count());
     }
-    public int count(){
+
+    public static  int count(){
         String a;
         Scanner scanner = new Scanner(System.in);
         a = scanner.nextLine();
