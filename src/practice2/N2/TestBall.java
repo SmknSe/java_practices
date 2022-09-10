@@ -6,7 +6,7 @@ public class TestBall {
         Ball ball1 = new Ball();
         ball1.setXY(12,3);
         ball.move(2,3.6);
-        System.out.println(ball.toString());
-        System.out.println(ball1.toString());
+        System.out.println(ball);
+        System.out.println(ball1);
     }
 }
