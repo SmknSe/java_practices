@@ -10,8 +10,8 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         String[] first = scanner.nextLine().split(" ");
         String[] second = scanner.nextLine().split(" ");
-        Stack<Integer> f = new Stack<Integer>();
-        Stack<Integer> s = new Stack<Integer>();
+        Stack<Integer> f = new Stack<>();
+        Stack<Integer> s = new Stack<>();
         for (int i=0;i<5;i++){
             f.add(Integer.parseInt(first[i]));
             s.add(Integer.parseInt(second[i]));
