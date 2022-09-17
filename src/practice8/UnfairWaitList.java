@@ -1,6 +1,6 @@
 package practice8;
 
-public class UnfairWaitList extends WaitList {
+public class UnfairWaitList<E> extends WaitList {
     public UnfairWaitList() {
     }
 

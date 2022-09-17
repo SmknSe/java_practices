@@ -1,6 +1,6 @@
 package practice8;
 
-public class BoundedWaitList extends WaitList{
+public class BoundedWaitList<E> extends WaitList{
     private int capacity;
 
     public BoundedWaitList(int capacity) {
