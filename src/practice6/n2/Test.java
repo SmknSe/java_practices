@@ -1,6 +1,8 @@
 package practice6.n2;
 
 
+import java.util.Comparator;
+
 public class Test {
     public static void main(String[] args) {
         SortingStudentsByGPA[] students = new SortingStudentsByGPA[5];
@@ -15,23 +17,23 @@ public class Test {
         }
     }
 
-    public static void quick_sort(Comparable[] list,int low, int high){
+    public static void quick_sort(SortingStudentsByGPA[] list,int low, int high){
         if (list.length == 0)
             return;
         if (low >= high)
             return;
         int middle = low + (high - low) / 2;
-        Comparable opora = list[middle];
+        SortingStudentsByGPA opora = list[middle];
         int i = low, j = high;
         while (i <= j) {
-            while (list[i].compareTo(opora)>0) {
+            while (opora.compare(list[i],opora)>0) {
                 i++;
             }
-            while (list[j].compareTo(opora)<0) {
+            while (opora.compare(list[j],opora)<0) {
                 j--;
             }
             if (i <= j) {
-                Comparable temp = list[i];
+                SortingStudentsByGPA temp = list[i];
                 list[i] = list[j];
                 list[j] = temp;
                 i++;

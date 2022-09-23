@@ -1,6 +1,8 @@
 package practice6.n2;
 
-public class SortingStudentsByGPA implements Comparable<SortingStudentsByGPA>{
+import java.util.Comparator;
+
+public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA> {
     public String name;
     public Integer age;
     public Integer score;
@@ -21,13 +23,8 @@ public class SortingStudentsByGPA implements Comparable<SortingStudentsByGPA>{
                 '}';
     }
 
-
     @Override
-    public int compareTo(SortingStudentsByGPA student) {
-        int res = this.score.compareTo(student.score);
-        if (res == 0){
-            res = this.name.compareTo(student.name);
-        }
-        return res;
+    public int compare(SortingStudentsByGPA o1, SortingStudentsByGPA o2) {
+        return o1.score.compareTo(o2.score);
     }
 }
