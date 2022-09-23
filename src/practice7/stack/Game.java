@@ -22,14 +22,14 @@ public class Game {
             if (f.firstElement()==0 && s.firstElement()==9 || f.firstElement() > s.firstElement() && !(f.firstElement()==9 && s.firstElement()==0)){
                 f.add(f.firstElement());
                 f.add(s.firstElement());
-                f.remove(f.firstElement());
-                s.remove(s.firstElement());
+                f.pop();
+                s.pop();
             }
             else if (f.firstElement() < s.firstElement() && !(s.firstElement()==9 && f.firstElement()==0) || s.firstElement()==0 && f.firstElement()==9){
                 s.add(f.firstElement());
                 s.add(s.firstElement());
-                s.remove(s.firstElement());
-                f.remove(f.firstElement());
+                s.pop();
+                f.pop();
             }
             count++;
             System.out.println(s);
