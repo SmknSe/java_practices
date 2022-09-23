@@ -3,7 +3,7 @@ package practice8;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class WaitList<E> implements IWaitList{
+public class WaitList<E> implements IWaitList<E>{
     protected ConcurrentLinkedQueue<E> content;
 
     public WaitList() {
@@ -21,26 +21,22 @@ public class WaitList<E> implements IWaitList{
     }
 
     @Override
-    public void add(Object element) {
-        content.add((E) element);
+    public void add(E element) {
+        content.add(element);
     }
 
     @Override
-    public Object remove(Object element) {
-        if (content.contains(element)){
-            content.remove(element);
-            return element;
-        }
-        else return null;
+    public E remove() {
+        return content.remove();
     }
 
     @Override
-    public boolean contains(Object element) {
+    public boolean contains(E element) {
         return content.contains(element);
     }
 
     @Override
-    public boolean containsAll(Collection c) {
+    public boolean containsAll(Collection<E> c) {
         return content.containsAll(c);
     }
 

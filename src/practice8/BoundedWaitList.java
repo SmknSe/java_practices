@@ -1,6 +1,6 @@
 package practice8;
 
-public class BoundedWaitList<E> extends WaitList{
+public class BoundedWaitList<E> extends WaitList<E>{
     private int capacity;
 
     public BoundedWaitList(int capacity) {
@@ -20,7 +20,7 @@ public class BoundedWaitList<E> extends WaitList{
     }
 
     @Override
-    public void add(Object element) {
+    public void add(E element) {
         if (content.size()<capacity) super.add(element);
     }
 }

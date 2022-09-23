@@ -1,16 +1,15 @@
 package practice8;
 
-public class UnfairWaitList<E> extends WaitList {
+public class UnfairWaitList<E> extends WaitList<E> {
     public UnfairWaitList() {
     }
 
-    @Override
-    public Object remove(Object element) {
-        if (!element.equals(content.stream().findFirst())) return super.remove(element);
-        return null;
+    public void remove(E element) {
+        content.remove(element);
     }
 
-    public void moveToBack(Object element){
-        super.add(super.remove(element));
+    public void moveToBack(E element){
+        content.remove(element);
+        content.add(element);
     }
 }
