@@ -12,6 +12,7 @@ public class Main {
         System.out.println(unfairWaitList);
         unfairWaitList.moveToBack(2);
         unfairWaitList.remove(8);
+        unfairWaitList.remove(0);
         System.out.println(unfairWaitList);
 
         BoundedWaitList<Object> boundedWaitList1 = new BoundedWaitList<>(5);
