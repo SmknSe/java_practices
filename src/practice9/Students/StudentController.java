@@ -34,7 +34,7 @@ public class StudentController{
     public static SearchRes search(Student student) {
         for (Student ar_student : Data.getStudents()) {
             if (student.isStudent(ar_student)) {
-                return new SearchRes(student, null);
+                return new SearchRes(ar_student, null);
             }
         }
         return new SearchRes(null, new SearchEr("student not found"));
