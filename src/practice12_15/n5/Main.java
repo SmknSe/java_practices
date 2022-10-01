@@ -16,9 +16,7 @@ public class Main {
         try (BufferedReader br = Files.newBufferedReader(Paths.get(fileName))) {
             String line;
             line = br.readLine();
-            System.out.println(line);
             line = getLine(line);
-            System.out.println(line);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }

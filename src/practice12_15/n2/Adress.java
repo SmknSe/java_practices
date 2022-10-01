@@ -1,5 +1,7 @@
 package practice12_15.n2;
 
+import java.util.StringTokenizer;
+
 public class Adress {
     String country;
     String region;
@@ -10,7 +12,11 @@ public class Adress {
     String apartment;
 
     public void separate(String s){
-        String[] arr = s.split("(, )|(: )|(; )|(. )|(- )");
+        String[] arr = s.split(", ");
+//        StringTokenizer stringTokenizer = new StringTokenizer(s,".,:;-");
+//        while (stringTokenizer.hasMoreTokens()){
+//            System.out.println(stringTokenizer.nextToken());
+//        }
         country = arr[0];
         region = arr[1];
         city = arr[2];
