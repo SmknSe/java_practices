@@ -24,14 +24,14 @@ public class Person {
 
         tmp = getIn(name);
         if (!tmp.isEmpty()) {
+            if (!res.isEmpty())
                 res.append(" ").append(tmp);
+            else res.append(tmp);
         }
 
         tmp = getIn(patronymic);
         if (!tmp.isEmpty()) {
-            if (res.charAt(res.length() - 1) == '.') {
                 res.append(" ").append(tmp);
-            }
         }
         return res.toString();
     }
