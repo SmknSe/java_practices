@@ -1,5 +1,7 @@
 package practice16;
 
+import java.util.Comparator;
+
 public final class Drink implements Item{
     private final float price;
     private final String name;
@@ -30,5 +32,14 @@ public final class Drink implements Item{
     @Override
     public String getDescription() {
         return this.description;
+    }
+
+    @Override
+    public String toString() {
+        return "Drink{" +
+                "price=" + price +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
