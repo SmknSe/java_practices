@@ -166,20 +166,6 @@ public class DoublyLinkedList{
         System.out.println();
     }
 
-    public void print_reverse() {
-        if (isEmpty()) {
-            System.out.println("List is empty");
-            return;
-        }
-        System.out.print("List of " + head.obj.getClass().toString().substring(16) + "s (reversed): ");
-        Node node = tail;
-        while (node != null) {
-            System.out.print(node + " ");
-            node = node.prev;
-        }
-        System.out.println();
-    }
-
     public int size(){
         Node cur = head;
         int c = 1;
