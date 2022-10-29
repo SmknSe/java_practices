@@ -30,6 +30,7 @@ public class Main {
             test2 = "Text 22 UDD, 0.002 USD smth";
             r = "\\d+\\.\\d{1,2} (USD)|(RUR)|(EU)";
             System.out.println(check(test1, r));
+
             System.out.println(check(test2, r));
         }
 }
